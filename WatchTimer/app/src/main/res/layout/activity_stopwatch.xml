@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#abc2d2">
+
+    <ImageView
+        android:id="@+id/backImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgg"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="00:00:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#46ae06"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:background="@drawable/start"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:background="@drawable/pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="41dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:background="@drawable/reset"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/buttonPause"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/buttonLap"
+        android:text="Save Lap"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/buttonStart"
+        android:layout_alignParentStart="true"
+        android:background="#758e8a"/>
+
+    <ListView
+        android:id="@+id/viewLapList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonLap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>

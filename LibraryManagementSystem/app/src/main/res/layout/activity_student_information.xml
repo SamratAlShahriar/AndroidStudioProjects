@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentInformationActivity">
+
+    <TextView
+        android:id="@+id/tvStudentInformation"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:text="Student Information"
+        android:background="#60615f"
+        android:gravity="center"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/tabBarStudentInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvStudentInformation"
+        android:background="#6f8fa1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabsStudentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerStudentInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabBarStudentInfo"
+        android:layout_above="@id/bottomButtonLaoyoutStudentInfo"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+    <RelativeLayout
+        android:id="@+id/bottomButtonLaoyoutStudentInfo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#a7ede1"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnResetStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:text="Reset"/>
+
+        <Button
+            android:id="@+id/btnSaveStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:text="Save"/>
+
+        <Button
+            android:id="@+id/btnUpdateStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="Update"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

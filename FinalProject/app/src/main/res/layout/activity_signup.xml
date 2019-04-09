@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_background"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="60sp"
+        android:fontFamily="@font/wj"
+        android:textColor="#075e61"
+        android:text="Sign up"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSignup"
+        android:text="Full Name"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"
+        android:layout_alignBottom="@+id/etName"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSignup"
+        android:layout_marginTop="30dp"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/tvName"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:text="Email"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"
+        android:layout_alignBottom="@+id/etEmail"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/tvEmail"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEmail"
+        android:text="Username"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"
+        android:layout_alignBottom="@+id/etUsername"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/tvUsername"/>
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUsername"
+        android:text="Password"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"
+        android:layout_alignBottom="@+id/etPassword"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUsername"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/tvPassword"/>
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/btnReset"
+        android:background="@drawable/savebutton"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/resetbutton"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvNoAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/btnLogin"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/btnLogin"
+        android:text="Already have an account. "/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/loginbutton"
+        android:text=""
+        />
+
+
+</RelativeLayout>

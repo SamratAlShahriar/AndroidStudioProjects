@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9c8b52"
+    tools:context=".SplashScreen">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/splashImage"
+            android:layout_width="300dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center"
+            android:alpha="0"
+            android:src="@drawable/aupic"/>
+
+        <TextView
+            android:id="@+id/splashText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/monotypecorsiva"
+            android:text="Welcome to Final App"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

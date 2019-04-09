@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.www.tosscoin.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:alpha="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cointosshand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/backImageChange"
+        android:alpha="0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewResult" />
+
+    <ImageView
+        android:id="@+id/backImageForAuth"
+        android:alpha="0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+    android:id="@+id/textHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Let's Toss"
+    android:fontFamily="serif-monospace"
+    android:textSize="40dp"
+    android:gravity="center"
+    android:textColor="#ffdc15"
+    android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/buttonHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:src="@drawable/h"
+        android:onClick="clickHead"
+        android:background="@drawable/h"
+        android:textSize="40dp"
+        android:clickable="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/textHeader"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/buttonTail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:onClick="clickTail"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:textSize="40dp"
+        android:background="@drawable/t"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/textHeader"/>
+
+    <TextView
+        android:id="@+id/viewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonTail"
+        android:layout_marginTop="80dp"
+        android:alpha="0"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:hint="Your result will appear here."
+        android:paddingTop="5dp"
+        android:textColor="#0ea79b"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/tossAgainButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:alpha="0"
+        android:background="#00f"
+        android:enabled="false"
+        android:fontFamily="serif-monospace"
+        android:onClick="tossAgain"
+        android:text="Toss Again"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        tools:text="Toss Again" />
+
+    <TextView
+        android:id="@+id/autorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:layout_below="@id/tossAgainButton"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        tools:clickable="true"
+        android:onClick="authorClick"
+        android:text="A Simple Toss Coin App\n© SAMRAT AL SHAHRIAR"
+        android:textColor="#910667"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+</ScrollView>

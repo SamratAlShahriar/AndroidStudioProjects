@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BookBasicInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollBookBasicInfoIfScreenSizeLower"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutAccessionNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvAccessionNo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignBottom="@id/etAccessionNo"
+            android:background="#aaa"
+            android:text="@string/book_accession_no"
+            android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etAccessionNo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/tvAccessionNo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layoutAccessionNo"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvBookTitle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#aaa"
+            android:text="@string/book_title"
+            android:layout_alignBottom="@id/etAccessionNo"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etBookTtile"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:layout_toRightOf="@id/tvAccessionNo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layoutBookTitle"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:background="#aaa"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/book_author"
+            android:layout_alignBottom="@id/etAccessionNo"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:layout_toRightOf="@id/tvAccessionNo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPublisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layoutAuthor"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvPublisher"
+            android:background="#aaa"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/book_publisher"
+            android:layout_alignBottom="@id/etPublisher"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etPublisher"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:layout_toRightOf="@id/tvPublisher"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutEdition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layoutPublisher"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvEdition"
+            android:background="#aaa"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/book_edition"
+            android:layout_alignBottom="@id/etEdition"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etEdition"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:layout_toRightOf="@id/tvEdition"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layoutEdition"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvGenre"
+            android:background="#aaa"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:text="@string/book_genre"
+            android:layout_alignBottom="@id/etGenre"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/etGenre"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:layout_toRightOf="@id/tvGenre"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

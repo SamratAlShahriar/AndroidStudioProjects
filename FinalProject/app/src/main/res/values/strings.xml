@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="employee_management">Employee Management</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+
+        android:id="@+id/textTab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="অজস্র স্বপ্নের ভিড়ে তোমায় দেখি, সমস্ত কল্পনা জুড়ে তোমার বসবাস, অজস্র কাব্য শুধু তোমায় নিয়ে লেখা অফুরন্ত বন্ধুত্ব নিয়ে তোমার অপেক্ষা থাকা।"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D928F7"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/FavoriteId1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:src="@drawable/ic_favorite_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/copyId1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:src="@drawable/ic_content_copy_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/shareId1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:src="@drawable/ic_share_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/sendId1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:src="@drawable/ic_send_black_24dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

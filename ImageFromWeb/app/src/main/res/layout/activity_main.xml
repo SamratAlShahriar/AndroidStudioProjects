@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f7f7f"
+    tools:context="com.google.www.imagefromweb.MainActivity">
+
+    <TextView
+        android:id="@+id/textIFW"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:text="Image From Web"
+        android:textSize="40sp"
+        android:textColor="#ddd"
+        android:fontFamily="cursive"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/buttonGetImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textIFW"
+        android:layout_marginTop="10dp"
+        android:text="GET IMAGE"
+        android:clickable="true"
+        android:onClick="imageButton"
+        android:background="#707070"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+         />
+
+    <ImageView
+        android:id="@+id/viewImage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="10dp"
+        android:paddingTop="20dp"
+        android:alpha="0"
+        android:layout_below="@+id/buttonGetImage"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewImage"
+        android:text="Click \'GET IMAGE\' to see an image from internet"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:gravity="center"/>
+
+</RelativeLayout>

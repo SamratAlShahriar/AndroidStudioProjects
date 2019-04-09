@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.StudentOtherInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollStudentAddressInfoIfScreenSizeLower"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutFatherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tvFatherName"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_alignBottom="@id/etFatherName"
+                    android:background="#aaa"
+                    android:text="@string/student_father_name"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etFatherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@id/tvFatherName"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutMotherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/layoutFatherName"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tvMotherName"
+                    android:background="#aaa"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/student_mother_name"
+                    android:layout_alignBottom="@id/etMotherName"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etMotherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@id/tvMotherName"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/layoutMotherName"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:background="#aaa"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/student_email"
+                    android:layout_alignBottom="@id/etEmail"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@id/tvEmail"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/layoutEmail"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvMobileNo"
+                    android:background="#aaa"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/student_phone_no"
+                    android:layout_alignBottom="@id/etMobileNo"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/etMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@id/tvMobileNo"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

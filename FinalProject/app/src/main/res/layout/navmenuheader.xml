@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:background="@drawable/hbg">
+
+    <TextView
+        android:id="@+id/mhabout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/mhpic"
+        android:text="About Me"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/mhdetails"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/mhpic"
+        android:layout_below="@id/mhabout"
+        android:text="Samrat Al Shahriar"
+        android:fontFamily="serif-monospace"
+        android:textSize="16sp"
+        android:background="@drawable/name"
+        android:textColor="#176e64"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/mhinfo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/mhpic"
+        android:layout_below="@id/mhdetails"
+        android:paddingLeft="5dp"
+        android:text="fb.com/SamratAlShahriar"
+        android:textSize="14sp"
+        android:textColor="#ca1212"
+        />
+
+    <ImageView
+        android:id="@+id/mhpic"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/aupic"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>

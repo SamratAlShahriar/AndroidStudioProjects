@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ev-A</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+
+    <string name="dash_add_new_event">ADD NEW EVENT</string>
+</resources>

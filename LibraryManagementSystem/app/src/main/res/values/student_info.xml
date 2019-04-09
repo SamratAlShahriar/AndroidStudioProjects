@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="student_name">Name</string>
+    <string name="student_roll_no">Roll No.</string>
+    <string name="student_reg_no">Reg No.</string>
+    <string name="student_department">Department</string>
+    <string name="student_shift">Shift</string>
+    <string name="student_session">Session</string>
+    <string name="student_house_no">House No.</string>
+    <string name="student_road_no">Road No.</string>
+    <string name="student_block_village">Block/Village</string>
+    <string name="student_thana">Thana</string>
+    <string name="student_district">District</string>
+    <string name="student_father_name">Father\'s Name</string>
+    <string name="student_mother_name">Mother\'s Name</string>
+    <string name="student_email">Email</string>
+    <string name="student_phone_no">Phone No.</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.www.watchtimer.InputForTimer"
+    android:background="#8f8938">
+
+    <ImageView
+        android:id="@+id/backImgage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgin"
+        android:alpha="0.3"/>
+
+
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="182dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="Enter The Minutes For Timer"
+        android:paddingBottom="5dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Start"
+        android:fontFamily="serif-monospace"
+        android:textSize="35sp"
+        android:layout_marginTop="20dp"
+        android:background="#746a9c"
+        android:layout_below="@+id/userInput"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickStart"/>
+
+</RelativeLayout>

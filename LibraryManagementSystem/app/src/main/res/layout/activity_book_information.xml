@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookInformationActivity">
+
+    <TextView
+        android:id="@+id/tvBookInformation"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:text="Book Information"
+        android:background="#444"
+        android:gravity="center"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/tabBarBookInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBookInformation"
+        android:background="#787b74"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabsBookInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerBookInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabBarBookInfo"
+        android:layout_above="@id/bottomButtonLaoyoutBookInfo"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+    <RelativeLayout
+        android:id="@+id/bottomButtonLaoyoutBookInfo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#a7ede1"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnResetBook"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:text="Reset"/>
+
+        <Button
+            android:id="@+id/btnSaveBook"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:text="Save"/>
+
+        <Button
+            android:id="@+id/btnUpdateBook"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="Update"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

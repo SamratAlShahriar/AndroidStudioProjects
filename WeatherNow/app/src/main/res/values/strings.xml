@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weather Now</string>
+    <string name="button_dhaka">Dhaka</string>
+    <string name="button_london">London</string>
+    <string name="button_newyork">Newyork</string>
+    <string name="button_tokyo">Tokyo</string>
+</resources>

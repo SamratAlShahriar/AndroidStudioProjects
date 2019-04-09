@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#a6a5a5"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linLayForNameAndPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+    <TextView
+        android:id="@+id/listShowEmpName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.45"
+        android:textColor="#137166"
+        android:fontFamily="@font/algerian"
+        android:layout_toLeftOf="@+id/listShowEmpPhone"
+        android:textSize="22sp"
+        android:text="name"/>
+
+    <TextView
+        android:id="@+id/listShowEmpPhone"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.55"
+        android:paddingTop="2dp"
+        android:paddingRight="1dp"
+        android:textColor="#077b20"
+        android:gravity="right"
+        android:textSize="18sp"
+        android:layout_alignBottom="@id/listShowEmpName"
+        android:text="01735861768" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayForDesAndDep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/listShowEmpDesignation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="left"
+        android:fontFamily="@font/monotypecorsiva"
+        android:textColor="#792be6"
+        android:textSize="20sp"
+        android:text="designation"/>
+
+    <TextView
+        android:id="@+id/listShowEmpDepartment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="right"
+        android:fontFamily="@font/monotypecorsiva"
+        android:textColor="#af29d1"
+        android:textSize="20sp"
+        android:text="department"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayForEmAndSal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listShowEmpEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:layout_gravity="left"
+            android:textColor="#1327b4"
+            android:textSize="16sp"
+            android:text="email"
+            />
+
+        <TextView
+            android:id="@+id/listShowEmpSalary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:gravity="right"
+            android:textColor="#0e59e4"
+            android:textSize="18sp"
+            android:text="salary"/>
+
+    </LinearLayout>
+
+</LinearLayout>
